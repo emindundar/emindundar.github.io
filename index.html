@@ -218,12 +218,16 @@
       }
 
       btnClear.addEventListener("click", function (event) {
-        if (confirm("Gerçekten temizlemek istiyor musunuz?")) {
-          gorevListesi.splice(0, gorevListesi.length);
-        }
+        if (gorevListesi.length === 0) {
+        alert("Liste zaten boş.");
+        } 
+        else if (confirm("Gerçekten temizlemek istiyor musunuz?")) {
+        gorevListesi.splice(0, gorevListesi.length);
         localStorage.setItem("gorevListesi", JSON.stringify(gorevListesi));
         displayTasks();
+        }
       });
+
 
       function sec(secilenTask) {
         let label = secilenTask.nextElementSibling;
