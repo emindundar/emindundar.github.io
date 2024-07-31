@@ -167,7 +167,7 @@
       }
 
       function newTask(event) {
-        if (yazdir.value === "") {
+        if (yazdir.value.trim() === "") {
           alert("Lütfen bir değer giriniz.");
         } 
         else {
@@ -199,6 +199,7 @@
       }
 
       document.querySelector("#btnAdd").addEventListener("click", newTask);
+
 
       function deleteTask(id) {
         if (confirm("Gerçekten silmek istiyor musunuz?")) {
