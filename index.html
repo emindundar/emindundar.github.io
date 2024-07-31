@@ -14,33 +14,35 @@
       .task label.checked {
         text-decoration: line-through;
       }
-
       .controls {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
       }
-
       .filters {
         display: flex;
         gap: 10px;
       }
-
       .filters span.active {
         color: blue;
       }
-
       .filters span {
         cursor: pointer;
       } 
       label {
         word-break: break-word;
+        text-align: start;
       }
       textarea{
       height: 20px;
-    }
-
+      }
+      button {
+      height: 100%;
+      }
+      .input{
+      display: flex;
+      gap: 10px;}
     </style>
   </head>
   <body class="bg-secondary">
@@ -50,7 +52,7 @@
           <div class="card">
             <div class="card-header h1">To-Do List</div>
             <div class="card-body">
-              <div class="input-group mb-3">
+              <div class="input mb-3">
                 <textarea type="text"
                 id="txtInput"
                 class="form-control"
@@ -214,7 +216,6 @@
         displayTasks(document.querySelector("span.active").id);
         localStorage.setItem("gorevListesi", JSON.stringify(gorevListesi));
       }
-
       function editTask(taskId, taskName) {
         editId = taskId;
         isEditTask = true;
