@@ -33,23 +33,30 @@
 
       .filters span {
         cursor: pointer;
+      } 
+      label {
+        word-break: break-word;
       }
+      textarea{
+      height: 20px;
+    }
+
     </style>
   </head>
   <body class="bg-secondary">
     <div class="container mt-5 text-center">
       <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
           <div class="card">
             <div class="card-header h1">To-Do List</div>
             <div class="card-body">
               <div class="input-group mb-3">
-                <input
-                  type="text"
-                  id="txtInput"
-                  class="form-control"
-                  placeholder="Yeni Görev Ekle"
-                />
+                <textarea type="text"
+                id="txtInput"
+                class="form-control"
+                placeholder="Yeni Görev Ekle"
+                autofocus>
+              </textarea>
                 <button
                   class="btn btn-outline-primary"
                   id="btnAdd"
@@ -108,22 +115,31 @@
         } else {
           for (let i of gorevListesi) {
             let completed = i.durum == "completed" ? "checked" : "";
-
+            let editButton = i.durum == "pending" ? `<div class="px-2">
+                  <button
+                    onclick='editTask(${i.id},"${i.gorev}")'
+                    class="btn btn-outline-warning float-end m-1"
+                    id="btnEdit"
+                    type="button"
+                  >
+                    Düzenle
+                  </button>
+                </div>` : "";
             if (filter === "all" || filter === i.durum) {
               let li = `
               <li class="task list-group-item d-flex align-item-center">
-                <div class="form-check w-100 d-flex align-items-center">
+                <form class="form-check w-100 d-flex align-items-center">
                   <input
                     type="checkbox"
                     onclick="sec(this)"
-                    class="form-check-input"
+                    class="form-check-input me-2"
                     id="${i.id}"
                     ${completed}
                   >
                   <label for="${i.id}" class="form-check-label ${completed}">
                     ${i.gorev}
                   </label>            
-                </div>
+                </form>
                 <div>
                   <button
                     onclick="deleteTask(${i.id})"
@@ -134,16 +150,7 @@
                     Sil
                   </button>
                 </div>
-                <div class="px-2">
-                  <button
-                    onclick='editTask(${i.id},"${i.gorev}")'
-                    class="btn btn-outline-warning float-end m-1"
-                    id="btnEdit"
-                    type="button"
-                  >
-                    Düzenle
-                  </button>
-                </div>
+                ${editButton}
               </li>`;
               getir.insertAdjacentHTML("afterbegin", li);
             }
@@ -160,16 +167,22 @@
       }
 
       function newTask(event) {
-        if (yazdir.value == "") {
+        if (yazdir.value === "") {
           alert("Lütfen bir değer giriniz.");
-        } else {
+        } 
+        else {
           if (!isEditTask) {
+            let metin = yazdir.value
+            .split('\n')
+            .map(line=> line.trim())
+            .filter(line => line.length > 0)
+            .join('<br>');
             gorevListesi.push({
               id: gorevListesi.length + 1,
-              gorev: yazdir.value,
+              gorev: metin,
               durum: "pending",
             });
-            txtInput.value = "";
+            yazdir.value = "";
             displayTasks("all");
           } else {
             for (let i of gorevListesi) {
@@ -186,14 +199,6 @@
       }
 
       document.querySelector("#btnAdd").addEventListener("click", newTask);
-
-      document
-        .querySelector("#txtInput")
-        .addEventListener("keypress", function (event) {
-          if (event.key == "Enter") {
-            document.getElementById("btnAdd").click();
-          }
-        });
 
       function deleteTask(id) {
         if (confirm("Gerçekten silmek istiyor musunuz?")) {
@@ -246,7 +251,12 @@
         }
         displayTasks(document.querySelector("span.active").id);
         localStorage.setItem("gorevListesi", JSON.stringify(gorevListesi));
-      }
+        }
+        yazdir.addEventListener("keypress", function(event) {
+          if (event.key === " " && yazdir.value.trim() === "") {
+            event.preventDefault();
+          }
+        });
     </script>
   </body>
 </html>
