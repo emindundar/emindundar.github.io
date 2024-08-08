@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .navbar {
+        height: 100px;
+        background-color: #2c3333;
+        width: 100%;
+      }
+    
+      .card {
+        background-color:rgb(57, 106, 106,0.5);
+      }
+      .card-text {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .card-title {
+        word-break: break-all;
+      }
+      .card-body .card-text{
+      border-radius: 10px;
+      padding: 3px;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 16px;
+      word-break: break-all; 
+      color: white;
+      }
+      .navbar-brand{
+      font-size: 20px;
+      font-weight: 600;
+      margin-left: 10px;
+      font-family:'Courier New', Courier, monospace;
+      }
+      div p{
+      font-family:'Courier New', Courier, monospace;
+      font-weight: bold;
+      }
+    </style>
+  </head>
+  <body style="background-color: #2e4f4f">
+    <nav class="navbar navbar-dark">
+      <div class="container-fluid">
+        <a href="search.html" class="navbar-brand">Search Github Profile</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container my-3">
+        <div class="row" id="profile"></div>
+      </div>
+    </main>
+    <script>
+      // api ile kullanıcıyı çekme
+      function displayProfile(username) {
+        const request = new XMLHttpRequest();
+        request.open("GET", `https://api.github.com/users/${username}`);
+        request.send();
+
+        request.addEventListener("load", function () {
+            const data = JSON.parse(this.responseText);
+            setProfile(data);
+        });
+        request.addEventListener("error", function () {
+          console.error("REques failed.");
+        });
+      }
+
+      // çekilen kullanıcıyı carda yazdırma
+      function setProfile(data) {
+        const profile = document.getElementById("profile");
+        const card = `
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="card text-dark d-flex justify-content-center align-items-center flex-row mt-3" style="width:850px;">
+            <div class="d-flex align-items-center ms-3" style="flex: 1;">
+              <img src="${
+                data.avatar_url
+              }" class="card-img-top card-img-bottom img-fluid my-3" alt="photo" style="height: 100%; width:100%;">
+            </div>
+            <div class="card-body" style="flex: 2;">
+              <h5 class="card-title text-center">User Name: ${data.login}</h5>
+              <p class="card-text">${data.name ? data.name : "No Name"}</p>
+              <p class="card-text">${data.bio ? data.bio : "No Bio"}</p>
+              <p class="card-text">Followers: ${data.followers}</p>
+              <p class="card-text">Following: ${data.following}</p>
+              <a href="${
+                data.html_url
+              }" target="_blank" class="btn btn-primary my-2">GitHub</a>
+              <a href="repos.html" class="btn btn-primary my-2">GitHub Repos</a>
+            </div>
+          </div>
+        </div>`;
+
+        profile.innerHTML = card;
+      }
+
+      // sayfa yüklendiğinde kullanıcı adını al ve profili göster
+      document.addEventListener("DOMContentLoaded", function () {
+        const username = localStorage.getItem("selectedUsername");
+          displayProfile(username);
+      });
+      //repo.html veri gönder
+      function goToRepos() {
+        const username = localStorage.getItem("selectedUsername");
+          window.location.href = "repos.html";
+      }
+    </script>
+  </body>
+</html>
