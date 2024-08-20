@@ -1,0 +1,266 @@
+{
+  "0": [
+    {
+      "id": 0,
+      "title": "Golden State Warriors Win NBA Championship After Thrilling Game 7",
+      "image": "resimvs/1nba.jpg",
+      "category": "Basketball",
+      "author": "John Doe",
+      "authorPic": "author2.jpg",
+      "published_date": "2024-06-20",
+      "reading_time": "4 minutes",
+      "content": "The Golden State Warriors secured their seventh NBA championship in franchise history after a nail-biting Game 7 against the Boston Celtics. The game was a classic, with both teams exchanging leads until the final seconds...",
+      "tags": [
+        "Basketball",
+        "NBA",
+        "Championship",
+        "Golden State Warriors",
+        "Sports"
+      ]
+    }
+  ],
+  "1": [
+    {
+      "id": 1,
+      "title": "Top 10 Movies of 2024",
+      "image": "resimvs/4.jpg",
+      "category": "Movie",
+      "author": "Jane Doe",
+      "authorPic": "author2.jpg",
+      "published_date": "2024-08-10",
+      "reading_time": "8 minutes",
+      "content": "2024 brought us a variety of blockbuster hits and critically acclaimed films. Here are the top 10 movies of the year that you shouldn't miss...",
+      "tags": ["Movies", "Cinema", "Blockbusters", "Critics", "Reviews"]
+    }
+  ],
+  "2": [
+    {
+      "id": 2,
+      "title": "The Most Memorable Moments of the 2024 Olympics",
+      "image": "resimvs/2.jpg",
+      "category": "Sport",
+      "author": "John Smith",
+      "authorPic": "author3.jpg",
+      "published_date": "2024-07-30",
+      "reading_time": "7 minutes",
+      "content": "The 2024 Olympics were filled with unforgettable moments. From record-breaking performances to unexpected victories, here's a recap of the highlights...",
+      "tags": ["Sports", "Olympics", "Records", "Highlights", "Athletes"]
+    }
+  ],
+  "3": [
+    {
+      "id": 3,
+      "title": "Exploring Modern Art: The 2024 Exhibitions",
+      "image": "resimvs/3.jpg",
+      "category": "Art",
+      "author": "Emily Turner",
+      "authorPic": "author4.jpg",
+      "published_date": "2024-08-01",
+      "reading_time": "6 minutes",
+      "content": "This year has been significant for the art world with numerous exhibitions showcasing contemporary masterpieces. Discover the most talked-about art shows of 2024...",
+      "tags": ["Art", "Exhibitions", "Modern Art", "Galleries", "Artists"]
+    }
+  ],
+  "4": [
+    {
+      "id": 4,
+      "title": "Indie Movies Making a Big Splash in 2024",
+      "image": "resimvs/1.jpg",
+      "category": "Movie",
+      "author": "Chris Evans",
+      "authorPic": "author5.jpg",
+      "published_date": "2024-06-15",
+      "reading_time": "6 minutes",
+      "content": "2024 has been a great year for indie movies. From low-budget hits to critically acclaimed pieces, here's a look at some of the best indie films this year...",
+      "tags": ["Movies", "Indie", "Low Budget", "Independent", "Film Festival"]
+    }
+  ],
+  "5": [
+    {
+      "id": 5,
+      "title": "The Rise of Women's Football in 2024",
+      "image": "resimvs/5.jpg",
+      "category": "Sport",
+      "author": "Samantha Lee",
+      "authorPic": "author6.jpg",
+      "published_date": "2024-05-22",
+      "reading_time": "5 minutes",
+      "content": "Women's football has seen unprecedented growth in 2024, with new records set and more visibility than ever before. Here's a look at the key moments...",
+      "tags": ["Sports", "Football", "Women", "Records", "Visibility"]
+    }
+  ],
+  "6": [
+    {
+      "id": 6,
+      "title": "Art Basel 2024: Highlights from the World's Leading Art Fair",
+      "image": "resimvs/6.jpg",
+      "category": "Art",
+      "author": "Amanda Clarke",
+      "authorPic": "author7.jpg",
+      "published_date": "2024-06-05",
+      "reading_time": "7 minutes",
+      "content": "Art Basel 2024 was a spectacular event, showcasing works from artists around the globe. Here are some of the highlights and most talked-about pieces...",
+      "tags": ["Art", "Exhibitions", "Art Fair", "Global", "Masterpieces"]
+    }
+  ],
+  "7": [
+    {
+      "id": 7,
+      "title": "The Return of Noir: 2024's Most Stylish Films",
+      "image": "resimvs/7.jpg",
+      "category": "Movie",
+      "author": "Laura Brown",
+      "authorPic": "author8.jpg",
+      "published_date": "2024-04-18",
+      "reading_time": "6 minutes",
+      "content": "2024 has seen a resurgence in noir-style films, with directors revisiting the dark, stylish themes of classic cinema. Explore the films that define this trend...",
+      "tags": ["Movies", "Noir", "Classic Cinema", "Style", "Trends"]
+    }
+  ],
+  "8": [
+    {
+      "id": 8,
+      "title": "2024: The Year of Record-Breaking Sporting Events",
+      "image": "resimvs/8.jpg",
+      "category": "Sport",
+      "author": "David Ross",
+      "authorPic": "author9.jpg",
+      "published_date": "2024-07-01",
+      "reading_time": "8 minutes",
+      "content": "From marathons to team sports, 2024 has been a year of breaking records. Here’s a rundown of the most astonishing athletic achievements...",
+      "tags": ["Sports", "Records", "Achievements", "Marathons", "Team Sports"]
+    }
+  ],
+  "9": [
+    {
+      "id": 9,
+      "title": "Understanding Abstract Art: A 2024 Guide",
+      "image": "resimvs/9.jpg",
+      "category": "Art",
+      "author": "Sophia Martinez",
+      "authorPic": "author10.jpg",
+      "published_date": "2024-03-12",
+      "reading_time": "5 minutes",
+      "content": "Abstract art can be challenging to grasp, but 2024 has seen an influx of exhibitions that make it more accessible. Here's your guide to understanding this fascinating genre...",
+      "tags": ["Art", "Abstract", "Guide", "Exhibitions", "Understanding"]
+    }
+  ],
+  "10": [
+    {
+      "id": 10,
+      "title": "Emerging Artists to Watch in 2024",
+      "image": "resimvs/10.jpg",
+      "category": "Art",
+      "author": "Liam Johnson",
+      "authorPic": "author11.jpg",
+      "published_date": "2024-05-10",
+      "reading_time": "6 minutes",
+      "content": "2024 has been a year of fresh talent in the art world. Meet the emerging artists who are making waves with their innovative works...",
+      "tags": ["Art", "Emerging Artists", "Innovation", "Talent", "Exhibitions"]
+    }
+  ],
+  "11": [
+    {
+      "id": 11,
+      "title": "The Evolution of Film Noir in Modern Cinema",
+      "image": "resimvs/11.jpg",
+      "category": "Movie",
+      "author": "Olivia Martinez",
+      "authorPic": "author12.jpg",
+      "published_date": "2024-07-20",
+      "reading_time": "7 minutes",
+      "content": "Explore how the classic film noir genre has evolved and influenced modern cinema with a look at some of the most notable films of 2024...",
+      "tags": ["Movies", "Noir", "Modern Cinema", "Influence", "Trends"]
+    }
+  ],
+  "12": [
+    {
+      "id": 12,
+      "title": "Highlighting Top Sports Moments of 2024",
+      "image": "resimvs/12.jpg",
+      "category": "Sport",
+      "author": "Ella Green",
+      "authorPic": "author13.jpg",
+      "published_date": "2024-08-05",
+      "reading_time": "6 minutes",
+      "content": "From thrilling victories to unexpected upsets, here are the standout sports moments that defined 2024...",
+      "tags": ["Sports", "Moments", "Victories", "Upsets", "Highlights"]
+    }
+  ],
+  "13": [
+    {
+      "id": 13,
+      "title": "The Best Action Movies of 2024",
+      "image": "resimvs/13.jpg",
+      "category": "Movie",
+      "author": "James Black",
+      "authorPic": "author14.jpg",
+      "published_date": "2024-06-25",
+      "reading_time": "5 minutes",
+      "content": "2024 has delivered some of the best action movies in recent years. Check out the top action-packed films that have kept audiences on the edge of their seats...",
+      "tags": ["Movies", "Action", "Blockbusters", "Film", "Entertainment"]
+    }
+  ],
+  "14": [
+    {
+      "id": 14,
+      "title": "Exploring the Impact of 2024's Major Sports Events",
+      "image": "resimvs/14.jpg",
+      "category": "Sport",
+      "author": "Mia Anderson",
+      "authorPic": "author15.jpg",
+      "published_date": "2024-06-30",
+      "reading_time": "6 minutes",
+      "content": "Major sports events of 2024 have had a significant impact on athletes and fans alike. Here’s a closer look at these pivotal moments and their effects...",
+      "tags": ["Sports", "Events", "Impact", "Athletes", "Fans"]
+    }
+  ],
+  "15": [
+    {
+      "id": 15,
+      "title": "An Insight into 2024’s Most Influential Art Movements",
+      "image": "resimvs/15.jpg",
+      "category": "Art",
+      "author": "Ava Davis",
+      "authorPic": "author16.jpg",
+      "published_date": "2024-05-15",
+      "reading_time": "7 minutes",
+      "content": "2024 has seen the rise of several influential art movements. Here’s an insight into the movements that are shaping the art world this year...",
+      "tags": ["Art", "Movements", "Influence", "Trends", "2024"]
+    }
+  ],
+  "16": [
+    {
+      "id": 16,
+      "title": "The Rise of Streaming Platforms in 2024",
+      "image": "resimvs/16.jpeg",
+      "category": "Movie",
+      "author": "Sophia Turner",
+      "authorPic": "author17.jpg",
+      "published_date": "2024-07-28",
+      "reading_time": "6 minutes",
+      "content": "Streaming platforms have revolutionized how we watch movies. Explore the top streaming services and their impact on the film industry in 2024...",
+      "tags": ["Movies", "Streaming", "Platforms", "Film Industry", "Trends"]
+    }
+  ],
+  "17": [
+    {
+      "id": 17,
+      "title": "The Rise of Streaming Platforms in 2020",
+      "image": "resimvs/17.jpeg",
+      "category": "Sport",
+      "author": "Lucas Gray",
+      "authorPic": "author18.jpg",
+      "published_date": "2024-07-15",
+      "reading_time": "8 minutes",
+      "content": "2024 has been a year of breakthroughs in various sports. Here’s a look at the most significant advancements and achievements...",
+      "tags": [
+        "Sports",
+        "Breakthroughs",
+        "Achievements",
+        "Innovations",
+        "Records"
+      ]
+    }
+  ]
+}
