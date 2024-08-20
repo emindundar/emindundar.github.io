@@ -1,0 +1,16 @@
+{
+  "2": [
+    {
+      "id": 2,
+      "title": "The Most Memorable Moments of the 2024 Olympics",
+      "image": "resimvs/2.jpg",
+      "category": "Sport",
+      "author": "John Smith",
+      "authorPic": "author3.jpg",
+      "published_date": "2024-07-30",
+      "reading_time": "7 minutes",
+      "content": "The 2024 Olympics were filled with unforgettable moments. From record-breaking performances to unexpected victories, here's a recap of the highlights...",
+      "tags": ["Sports", "Olympics", "Records", "Highlights", "Athletes"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "10": [
+    {
+      "id": 10,
+      "title": "Emerging Artists to Watch in 2024",
+      "image": "resimvs/10.jpg",
+      "category": "Art",
+      "author": "Liam Johnson",
+      "authorPic": "author11.jpg",
+      "published_date": "2024-05-10",
+      "reading_time": "6 minutes",
+      "content": "2024 has been a year of fresh talent in the art world. Meet the emerging artists who are making waves with their innovative works...",
+      "tags": ["Art", "Emerging Artists", "Innovation", "Talent", "Exhibitions"]
+    }
+  ]
+}

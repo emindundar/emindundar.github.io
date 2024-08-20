@@ -1,0 +1,22 @@
+{
+  "0": [
+    {
+      "id": 0,
+      "title": "Golden State Warriors Win NBA Championship After Thrilling Game 7",
+      "image": "resimvs/1nba.jpg",
+      "category": "Basketball",
+      "author": "John Doe",
+      "authorPic": "author2.jpg",
+      "published_date": "2024-06-20",
+      "reading_time": "4 minutes",
+      "content": "The Golden State Warriors secured their seventh NBA championship in franchise history after a nail-biting Game 7 against the Boston Celtics. The game was a classic, with both teams exchanging leads until the final seconds...",
+      "tags": [
+        "Basketball",
+        "NBA",
+        "Championship",
+        "Golden State Warriors",
+        "Sports"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "1": [
+    {
+      "id": 1,
+      "title": "Top 10 Movies of 2024",
+      "image": "resimvs/4.jpg",
+      "category": "Movie",
+      "author": "Jane Doe",
+      "authorPic": "author2.jpg",
+      "published_date": "2024-08-10",
+      "reading_time": "8 minutes",
+      "content": "2024 brought us a variety of blockbuster hits and critically acclaimed films. Here are the top 10 movies of the year that you shouldn't miss...",
+      "tags": ["Movies", "Cinema", "Blockbusters", "Critics", "Reviews"]
+    }
+  ]
+}

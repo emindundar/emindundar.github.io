@@ -1,0 +1,16 @@
+{
+ "3": [
+    {
+      "id": 3,
+      "title": "Exploring Modern Art: The 2024 Exhibitions",
+      "image": "resimvs/3.jpg",
+      "category": "Art",
+      "author": "Emily Turner",
+      "authorPic": "author4.jpg",
+      "published_date": "2024-08-01",
+      "reading_time": "6 minutes",
+      "content": "This year has been significant for the art world with numerous exhibitions showcasing contemporary masterpieces. Discover the most talked-about art shows of 2024...",
+      "tags": ["Art", "Exhibitions", "Modern Art", "Galleries", "Artists"]
+    }
+  ]
+}
