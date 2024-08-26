@@ -26,6 +26,7 @@
     object-fit: contain;
     border-right: 1px solid #000;
     padding-right: 20px;
+
   }
 
   .dFlex {
@@ -102,10 +103,10 @@
                 <div class="tab-pane fade" id="byPercentage" role="tabpanel">
                   <h5 class="my-3">New Sizes</h5>
                   <span class="d-block mb-3">
-                    <label for="range">Resize by Percentage: </label>
-                    <div class="d-flex justify-content-center">
-                      <input type="range" id="range" min="10" max="200" value="100" />
-                      <div class="ms-1" id="inputRange"></div>
+                    <label class="mb-2" for="range">Resize by Percentage: </label>
+                    <div class="d-block justify-content-center" style="transform: rotate(-90deg);">
+                      <input class="my-5" type="range" id="range" min="10" max="200" value="100" />
+                      <div style="transform: rotate(90deg);" class="ms-1" id="inputRange"></div>
                     </div>
                   </span>
                 </div>
